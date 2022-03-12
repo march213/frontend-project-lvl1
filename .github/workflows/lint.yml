@@ -14,6 +14,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "14.x"
+      - name: Install dependencies
+        run: make install
       - name: Lint project
-      - run: make install
-      - run: make lint
+        run: make lint
